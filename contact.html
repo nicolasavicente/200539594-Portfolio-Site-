@@ -31,38 +31,81 @@
         <img src="https://imgs.search.brave.com/2FCfMpBxCb7w1U8hu2BgwPKQMjg6vtEhRDNHtyyzb5E/rs:fit:450:391:1/g:ce/aHR0cDovL3NpdGVz/LnBzdS5lZHUvY3Vy/dG1vb3JlMzQvd3At/Y29udGVudC91cGxv/YWRzL3NpdGVzLzQw/MTcwLzIwMTYvMDQv/Y29udGFjdG1lLnBu/Zw"
             width="350" height="291">
         <cite>Image from sites.psu.edu</cite>
-        <b></b>r
+        <br>
     </div>
     <kbd><u>
             <h2>Contact me from this website:</h2>
         </u></kbd>
-    <fieldset>
-        <div class="form">
-            <legend>
-                <div class="form-heading">Please provide your information</div>
-            </legend>
-            <form action="" method="post">
-                <label for="field1"><span>Name <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field1" value="" /></label>
-                <label for="field2"><span>Email <span class="required">*</span></span><input type="text"
-                        class="input-field" name="field2" value="" /></label>
-                <label><span>Telephone</span><input type="text" class="number-field" name="tel_no_1" value=""
-                        maxlength="4" />-<input type="text" class="number-field" name="tel_no_2" value=""
-                        maxlength="4" />-<input type="text" class="number-field" name="tel_no_3" value=""
-                        maxlength="10" /></label>
-                <label for="field4"><span>What you are inquiring about</span><select name="field4" class="select-field">
-                        <option value="General">General</option>
-                        <option value="Business">Business</option>
-                        <option value="Partnership">Questions</option>
-                        <option value="Concerns">Concerns</option>
-                    </select></label>
-                <label for="field5"><span>Message <span class="required">*</span></span><textarea name="field5"
-                        class="textarea-field"></textarea></label>
-
-                <label><span> </span><input type="submit" value="Submit" /></label>
-            </form>
-        </div>
-    </fieldset>
+    <form action="/thanks.html" method="POST" name="contact" netlify>
+        <fieldset>
+            <kbd>
+                <legend>Your information:</legend>
+            </kbd>
+            <div>
+                <label for="name">Please enter your first name:</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+                <label for="name2">Please enter you last name:</label>
+                <br>
+                <input type="text" name="name" required>
+                <br>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <kbd>
+                <legend>Your Contact Information:</legend>
+            </kbd>
+            <div>
+                <label for="email">Please enter your email address:</label>
+                <br>
+                <input type="text" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Please enter your phone number</label>
+                <br>
+                <input type="text" name="phone" optional>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <kbd>
+                <legend>Inquiry</legend>
+            </kbd>
+            <label for="query">Please state what you are inquiring about </label>
+            <br>
+            <select id="query" name="Option">
+                <option value="Career opportunity">Career opportunity</option>
+                <option value="Business proposal">Business proposal</option>
+                <option value="Personal query">Personal query</option>
+                <option value="complaint">Complaint</option>
+                <option value="General query">General query</option>
+            </select>
+            <br>
+            <br>
+            <label for="message">Please enter a message</label>
+            <br>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <kbd>
+                <legend>Best date to reach you</legend>
+            </kbd>
+            <input type="date" name="date" optional>
+        </fieldset>
+        <br>
+        <fieldset>
+            <kbd>
+                <legend>Best time to reach you</legend>
+            </kbd>
+            <input type="time" name="time" optional>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
     <br>
     <footer>
         <div>
